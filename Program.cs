@@ -1,11 +1,22 @@
-﻿public class Program{
+﻿
+    public class Program{
     
     public static void Main (string[] args){
+        
+         
          Shop myShop = new Shop();
-         myShop.Name = "มีเดียทางการค้า";
-         myShop.Number = "7124574235102";
-         myShop.OwnerName = "นาย เจมส์ ทองดี";
-         myShop.RegisteredValue = 1000000;
+         Console.Write(myShop.Name = "Please input Name :");
+         myShop.Name = Console.ReadLine();
+
+         Console.Write(myShop.Number = "Please input Number :");
+         myShop.Number = Console.ReadLine();
+
+         Console.Write(myShop.OwnerName = "Please input Owner Name :");
+         myShop.OwnerName = Console.ReadLine();
+
+         Console.Write( myShop.RegisteredValue = "Please input Registered :");
+         var RegisteredValue = int.Parse(Console.ReadLine());
+
          PrintShopInfoemation(myShop);
 
     } 
@@ -27,3 +38,5 @@ public class Shop {
     public int RegisteredValue;
 
 }
+
+
